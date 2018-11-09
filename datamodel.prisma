@@ -1,0 +1,16 @@
+type Stays {
+  id: ID! @unique
+  name: String
+  bestPrice: Int
+}
+
+type Flights {
+  id: ID! @unique
+  parentId:Stays!
+  scales: String
+  price: Int
+  description:String
+  link:String
+  img:String
+
+}
